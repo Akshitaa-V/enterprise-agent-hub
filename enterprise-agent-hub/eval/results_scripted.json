@@ -1,0 +1,676 @@
+{
+  "summary": {
+    "provider": "scripted",
+    "model": "scripted",
+    "cases": 36,
+    "passed": 36,
+    "routing_accuracy": 1.0,
+    "answer_accuracy": 1.0,
+    "approval_accuracy": 1.0,
+    "multi_agent_cases_passed": "7/7",
+    "failure_cases_passed": "5/5",
+    "tool_calls": 44,
+    "tool_errors": 4,
+    "latency_p50_ms": 4.8,
+    "latency_p95_ms": 7.9,
+    "tokens": 0
+  },
+  "cases": [
+    {
+      "id": "erp-01",
+      "category": "erp",
+      "routing_ok": true,
+      "answer_ok": true,
+      "approvals_ok": true,
+      "passed": true,
+      "agents": [
+        "erp"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "tool_calls": 1,
+      "tool_errors": 0,
+      "latency_ms": 8.7,
+      "tokens": 0,
+      "answer": "Order SO-1007 for Lechtal Bau from 2026-07-14 is in production, total EUR 8,545.07, no invoice yet."
+    },
+    {
+      "id": "erp-02",
+      "category": "erp",
+      "routing_ok": true,
+      "answer_ok": true,
+      "approvals_ok": true,
+      "passed": true,
+      "agents": [
+        "erp"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "tool_calls": 1,
+      "tool_errors": 0,
+      "latency_ms": 4.8,
+      "tokens": 0,
+      "answer": "Invoice INV-5015 for Lechtal Bau: amount EUR 7,061.89, paid EUR 2,824.76, open EUR 4,237.13, due 2026-09-04, status overdue (27 days)."
+    },
+    {
+      "id": "erp-03",
+      "category": "erp",
+      "routing_ok": true,
+      "answer_ok": true,
+      "approvals_ok": true,
+      "passed": true,
+      "agents": [
+        "erp"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "tool_calls": 1,
+      "tool_errors": 0,
+      "latency_ms": 5.1,
+      "tokens": 0,
+      "answer": "Invoice INV-5009 for Brennwerk GmbH: amount EUR 2,819.60, paid EUR 1,127.84, open EUR 1,691.76, due 2026-10-11, status open."
+    },
+    {
+      "id": "erp-04",
+      "category": "erp",
+      "routing_ok": true,
+      "answer_ok": true,
+      "approvals_ok": true,
+      "passed": true,
+      "agents": [
+        "erp"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "tool_calls": 1,
+      "tool_errors": 0,
+      "latency_ms": 5.1,
+      "tokens": 0,
+      "answer": "2 overdue invoice(s), EUR 9,153.71 open in total: INV-5001 Brennwerk GmbH EUR 8,546.43 (14 days); INV-5017 Brennwerk GmbH EUR 607.28 (4 days)."
+    },
+    {
+      "id": "erp-05",
+      "category": "erp",
+      "routing_ok": true,
+      "answer_ok": true,
+      "approvals_ok": true,
+      "passed": true,
+      "agents": [
+        "erp"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "tool_calls": 1,
+      "tool_errors": 0,
+      "latency_ms": 4.1,
+      "tokens": 0,
+      "answer": "5 overdue invoice(s), EUR 23,482.78 open in total: INV-5001 Brennwerk GmbH EUR 8,546.43 (14 days); INV-5015 Lechtal Bau EUR 4,237.13 (27 days); INV-5016 Sonnenhof Hotels EUR 3,445.77 (31 days); INV-5017 Brennwerk GmbH EUR 607.28 (4 days); INV-5018 Nordlicht Logistik EUR 6,646.17 (16 days)."
+    },
+    {
+      "id": "erp-06",
+      "category": "erp",
+      "routing_ok": true,
+      "answer_ok": true,
+      "approvals_ok": true,
+      "passed": true,
+      "agents": [
+        "erp"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "tool_calls": 1,
+      "tool_errors": 0,
+      "latency_ms": 4.4,
+      "tokens": 0,
+      "answer": "SKU-1003 (Hinge, heavy duty): 45 units in warehouse NUE2, updated 2026-09-27."
+    },
+    {
+      "id": "erp-07",
+      "category": "erp",
+      "routing_ok": true,
+      "answer_ok": true,
+      "approvals_ok": true,
+      "passed": true,
+      "agents": [
+        "erp"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "tool_calls": 1,
+      "tool_errors": 0,
+      "latency_ms": 4.7,
+      "tokens": 0,
+      "answer": "SKU-1004 (Cable duct 2m): 2005 units in warehouse MUC1, updated 2026-09-28."
+    },
+    {
+      "id": "erp-08",
+      "category": "erp",
+      "routing_ok": true,
+      "answer_ok": true,
+      "approvals_ok": true,
+      "passed": true,
+      "agents": [
+        "erp"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "tool_calls": 1,
+      "tool_errors": 0,
+      "latency_ms": 4.5,
+      "tokens": 0,
+      "answer": "No overdue invoices found."
+    },
+    {
+      "id": "erp-09",
+      "category": "erp",
+      "routing_ok": true,
+      "answer_ok": true,
+      "approvals_ok": true,
+      "passed": true,
+      "agents": [
+        "erp"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "tool_calls": 1,
+      "tool_errors": 0,
+      "latency_ms": 6.5,
+      "tokens": 0,
+      "answer": "Credit note request CN-220D44BA for INV-5004 over EUR 120.00 was created and is pending approval by the account manager; it is not booked yet."
+    },
+    {
+      "id": "erp-10",
+      "category": "erp",
+      "routing_ok": true,
+      "answer_ok": true,
+      "approvals_ok": true,
+      "passed": true,
+      "agents": [
+        "erp"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "tool_calls": 1,
+      "tool_errors": 0,
+      "latency_ms": 6.3,
+      "tokens": 0,
+      "answer": "Credit note request CN-B8C1F030 for INV-5001 over EUR 800.00 was created and is pending approval by the head of finance; it is not booked yet."
+    },
+    {
+      "id": "ana-01",
+      "category": "analytics",
+      "routing_ok": true,
+      "answer_ok": true,
+      "approvals_ok": true,
+      "passed": true,
+      "agents": [
+        "analytics"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "tool_calls": 1,
+      "tool_errors": 0,
+      "latency_ms": 5.6,
+      "tokens": 0,
+      "answer": "Revenue by region: North EUR 246,384.10, South EUR 237,132.20, East EUR 233,230.30, West EUR 204,892.80."
+    },
+    {
+      "id": "ana-02",
+      "category": "analytics",
+      "routing_ok": true,
+      "answer_ok": true,
+      "approvals_ok": true,
+      "passed": true,
+      "agents": [
+        "analytics"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "tool_calls": 1,
+      "tool_errors": 0,
+      "latency_ms": 5.4,
+      "tokens": 0,
+      "answer": "Top products by revenue: 1. Safety switch 3-pole (SKU-1010) EUR 369,972.00; 2. LED panel 60x60 (SKU-1008) EUR 218,374.00; 3. Junction box IP65 (SKU-1007) EUR 93,945.50."
+    },
+    {
+      "id": "ana-03",
+      "category": "analytics",
+      "routing_ok": true,
+      "answer_ok": true,
+      "approvals_ok": true,
+      "passed": true,
+      "agents": [
+        "analytics"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "tool_calls": 1,
+      "tool_errors": 0,
+      "latency_ms": 4.9,
+      "tokens": 0,
+      "answer": "Revenue by quarter: Q1 EUR 235,691.10, Q2 EUR 227,433.60, Q3 EUR 289,901.00."
+    },
+    {
+      "id": "ana-04",
+      "category": "analytics",
+      "routing_ok": true,
+      "answer_ok": true,
+      "approvals_ok": true,
+      "passed": true,
+      "agents": [
+        "analytics"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "tool_calls": 1,
+      "tool_errors": 0,
+      "latency_ms": 4.8,
+      "tokens": 0,
+      "answer": "Revenue from Lechtal Bau: EUR 94,627.70."
+    },
+    {
+      "id": "ana-05",
+      "category": "analytics",
+      "routing_ok": true,
+      "answer_ok": true,
+      "approvals_ok": true,
+      "passed": true,
+      "agents": [
+        "analytics"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "tool_calls": 1,
+      "tool_errors": 0,
+      "latency_ms": 6.3,
+      "tokens": 0,
+      "answer": "Top products by revenue: 1. Safety switch 3-pole (SKU-1010) EUR 299,796.00; 2. LED panel 60x60 (SKU-1008) EUR 202,908.00; 3. Junction box IP65 (SKU-1007) EUR 78,569.70."
+    },
+    {
+      "id": "ana-06",
+      "category": "analytics",
+      "routing_ok": true,
+      "answer_ok": true,
+      "approvals_ok": true,
+      "passed": true,
+      "agents": [
+        "analytics"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "tool_calls": 1,
+      "tool_errors": 0,
+      "latency_ms": 4.3,
+      "tokens": 0,
+      "answer": "Revenue by region: South EUR 77,119.40, North EUR 75,279.90, East EUR 71,971.80, West EUR 65,529.90."
+    },
+    {
+      "id": "doc-01",
+      "category": "docs",
+      "routing_ok": true,
+      "answer_ok": true,
+      "approvals_ok": true,
+      "passed": true,
+      "agents": [
+        "docs"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "tool_calls": 1,
+      "tool_errors": 0,
+      "latency_ms": 3.8,
+      "tokens": 0,
+      "answer": "Invoices are payable within 30 days of the invoice date. Key accounts with a framework contract may be granted 45 days by the finance team. [payment_terms.md#standard-terms]"
+    },
+    {
+      "id": "doc-02",
+      "category": "docs",
+      "routing_ok": true,
+      "answer_ok": true,
+      "approvals_ok": true,
+      "passed": true,
+      "agents": [
+        "docs"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "tool_calls": 1,
+      "tool_errors": 0,
+      "latency_ms": 3.3,
+      "tokens": 0,
+      "answer": "Every credit note needs approval before it is booked in the ERP. Credit notes up to EUR 500 can be approved by the account manager. Credit notes above EUR 500 need approval from the head of finance. [credit_notes.md#approval-rules]"
+    },
+    {
+      "id": "doc-03",
+      "category": "docs",
+      "routing_ok": true,
+      "answer_ok": true,
+      "approvals_ok": true,
+      "passed": true,
+      "agents": [
+        "docs"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "tool_calls": 1,
+      "tool_errors": 0,
+      "latency_ms": 3.5,
+      "tokens": 0,
+      "answer": "Customers who pay within 10 days of the invoice date receive a 2% early payment discount, provided the invoice is not already subject to a credit note. [payment_terms.md#early-payment-discount]"
+    },
+    {
+      "id": "doc-04",
+      "category": "docs",
+      "routing_ok": true,
+      "answer_ok": true,
+      "approvals_ok": true,
+      "passed": true,
+      "agents": [
+        "docs"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "tool_calls": 1,
+      "tool_errors": 0,
+      "latency_ms": 3.3,
+      "tokens": 0,
+      "answer": "Orders confirmed before 14:00 on a business day ship the same day. Standard delivery within Germany takes 1 to 2 business days, and delivery within the EU takes 3 to 5 business days. [shipping_sla.md#delivery-times]"
+    },
+    {
+      "id": "doc-05",
+      "category": "docs",
+      "routing_ok": true,
+      "answer_ok": true,
+      "approvals_ok": true,
+      "passed": true,
+      "agents": [
+        "docs"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "tool_calls": 1,
+      "tool_errors": 0,
+      "latency_ms": 3.4,
+      "tokens": 0,
+      "answer": "Express delivery within Germany arrives the next business day before 12:00 and costs EUR 25 per order. [shipping_sla.md#express-service]"
+    },
+    {
+      "id": "doc-06",
+      "category": "docs",
+      "routing_ok": true,
+      "answer_ok": true,
+      "approvals_ok": true,
+      "passed": true,
+      "agents": [
+        "docs"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "tool_calls": 1,
+      "tool_errors": 0,
+      "latency_ms": 4.0,
+      "tokens": 0,
+      "answer": "Priority 1 support tickets (production stopped) get a first response within 2 hours. Priority 2 tickets get a first response within 1 business day. [shipping_sla.md#support-service-levels]"
+    },
+    {
+      "id": "doc-07",
+      "category": "docs",
+      "routing_ok": true,
+      "answer_ok": true,
+      "approvals_ok": true,
+      "passed": true,
+      "agents": [
+        "docs"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "tool_calls": 1,
+      "tool_errors": 0,
+      "latency_ms": 4.2,
+      "tokens": 0,
+      "answer": "A new business customer needs a valid VAT ID and a signed framework contract before the first order on account. Until then, orders are prepaid. [customer_onboarding.md#new-business-customers]"
+    },
+    {
+      "id": "doc-08",
+      "category": "docs",
+      "routing_ok": true,
+      "answer_ok": true,
+      "approvals_ok": true,
+      "passed": true,
+      "agents": [
+        "docs"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "tool_calls": 1,
+      "tool_errors": 0,
+      "latency_ms": 3.4,
+      "tokens": 0,
+      "answer": "Customers can return unused products within 30 days of delivery. Custom-made and cut-to-length products cannot be returned. [returns_policy.md#return-window]"
+    },
+    {
+      "id": "multi-01",
+      "category": "multi",
+      "routing_ok": true,
+      "answer_ok": true,
+      "approvals_ok": true,
+      "passed": true,
+      "agents": [
+        "erp",
+        "docs"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "tool_calls": 2,
+      "tool_errors": 0,
+      "latency_ms": 6.1,
+      "tokens": 0,
+      "answer": "Invoice INV-5016 for Sonnenhof Hotels: amount EUR 3,445.77, paid EUR 0.00, open EUR 3,445.77, due 2026-08-31, status overdue (31 days). An invoice becomes overdue on the first day after its due date. After 14 days overdue, the account manager sends a first reminder. After 30 days overdue, finance sends a second reminder and may put new orders for that customer on hold. [payment_terms.md#late-payment]"
+    },
+    {
+      "id": "multi-02",
+      "category": "multi",
+      "routing_ok": true,
+      "answer_ok": true,
+      "approvals_ok": true,
+      "passed": true,
+      "agents": [
+        "erp",
+        "analytics"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "tool_calls": 2,
+      "tool_errors": 0,
+      "latency_ms": 7.0,
+      "tokens": 0,
+      "answer": "1 overdue invoice(s), EUR 4,237.13 open in total: INV-5015 Lechtal Bau EUR 4,237.13 (27 days). Revenue from Lechtal Bau: EUR 94,627.70."
+    },
+    {
+      "id": "multi-03",
+      "category": "multi",
+      "routing_ok": true,
+      "answer_ok": true,
+      "approvals_ok": true,
+      "passed": true,
+      "agents": [
+        "erp",
+        "docs"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "tool_calls": 2,
+      "tool_errors": 0,
+      "latency_ms": 7.9,
+      "tokens": 0,
+      "answer": "Credit note request CN-A660F822 for INV-5008 over EUR 300.00 was created and is pending approval by the account manager; it is not booked yet. Damage must be reported within 5 business days of delivery, with photos and the delivery note number. Late damage reports are reviewed case by case. [returns_policy.md#damaged-deliveries] Every credit note needs approval before it is booked in the ERP. Credit notes up to EUR 500 can be approved by the account manager. Credit notes above EUR 500 need approval from the head of finance. [credit_notes.md#approval-rules]"
+    },
+    {
+      "id": "multi-04",
+      "category": "multi",
+      "routing_ok": true,
+      "answer_ok": true,
+      "approvals_ok": true,
+      "passed": true,
+      "agents": [
+        "analytics",
+        "docs"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "tool_calls": 2,
+      "tool_errors": 0,
+      "latency_ms": 6.1,
+      "tokens": 0,
+      "answer": "Revenue by region: South EUR 77,119.40, North EUR 75,279.90, East EUR 71,971.80, West EUR 65,529.90. Invoices are payable within 30 days of the invoice date. Key accounts with a framework contract may be granted 45 days by the finance team. [payment_terms.md#standard-terms] Customers who pay within 10 days of the invoice date receive a 2% early payment discount, provided the invoice is not already subject to a credit note. [payment_terms.md#early-payment-discount]"
+    },
+    {
+      "id": "multi-05",
+      "category": "multi",
+      "routing_ok": true,
+      "answer_ok": true,
+      "approvals_ok": true,
+      "passed": true,
+      "agents": [
+        "erp",
+        "docs"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "tool_calls": 2,
+      "tool_errors": 0,
+      "latency_ms": 5.8,
+      "tokens": 0,
+      "answer": "SKU-1010 (Safety switch 3-pole): 33 units in warehouse NUE2, updated 2026-09-25. Customers can return unused products within 30 days of delivery. Custom-made and cut-to-length products cannot be returned. [returns_policy.md#return-window]"
+    },
+    {
+      "id": "multi-06",
+      "category": "multi",
+      "routing_ok": true,
+      "answer_ok": true,
+      "approvals_ok": true,
+      "passed": true,
+      "agents": [
+        "erp",
+        "analytics"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "tool_calls": 2,
+      "tool_errors": 0,
+      "latency_ms": 6.9,
+      "tokens": 0,
+      "answer": "Order SO-1015 for Lechtal Bau from 2026-08-03 is shipped, total EUR 7,061.89, invoice INV-5015. Top products by revenue: 1. Safety switch 3-pole (SKU-1010) EUR 369,972.00; 2. LED panel 60x60 (SKU-1008) EUR 218,374.00; 3. Junction box IP65 (SKU-1007) EUR 93,945.50."
+    },
+    {
+      "id": "multi-07",
+      "category": "multi",
+      "routing_ok": true,
+      "answer_ok": true,
+      "approvals_ok": true,
+      "passed": true,
+      "agents": [
+        "erp",
+        "analytics",
+        "docs"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "tool_calls": 3,
+      "tool_errors": 0,
+      "latency_ms": 8.5,
+      "tokens": 0,
+      "answer": "2 overdue invoice(s), EUR 9,153.71 open in total: INV-5001 Brennwerk GmbH EUR 8,546.43 (14 days); INV-5017 Brennwerk GmbH EUR 607.28 (4 days). Revenue from Brennwerk GmbH: EUR 110,295.30. An invoice becomes overdue on the first day after its due date. After 14 days overdue, the account manager sends a first reminder. After 30 days overdue, finance sends a second reminder and may put new orders for that customer on hold. [payment_terms.md#late-payment]"
+    },
+    {
+      "id": "fail-01",
+      "category": "failure",
+      "routing_ok": true,
+      "answer_ok": true,
+      "approvals_ok": true,
+      "passed": true,
+      "agents": [
+        "erp"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "tool_calls": 1,
+      "tool_errors": 1,
+      "latency_ms": 4.0,
+      "tokens": 0,
+      "answer": "get_order failed: order SO-1099 does not exist (order ids look like SO-1001)."
+    },
+    {
+      "id": "fail-02",
+      "category": "failure",
+      "routing_ok": true,
+      "answer_ok": true,
+      "approvals_ok": true,
+      "passed": true,
+      "agents": [
+        "erp"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "tool_calls": 1,
+      "tool_errors": 1,
+      "latency_ms": 3.8,
+      "tokens": 0,
+      "answer": "get_stock_level failed: stock for SKU-1009 is unknown: the legacy export row was quarantined (expected 52 characters, got 44) (ask the warehouse team to re-export this SKU)."
+    },
+    {
+      "id": "fail-03",
+      "category": "failure",
+      "routing_ok": true,
+      "answer_ok": true,
+      "approvals_ok": true,
+      "passed": true,
+      "agents": [
+        "erp"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "tool_calls": 1,
+      "tool_errors": 1,
+      "latency_ms": 3.9,
+      "tokens": 0,
+      "answer": "request_credit_note failed: credit note of EUR 5,000.00 exceeds invoice INV-5017 amount of EUR 1,012.14 (a credit note can never exceed the original invoice)."
+    },
+    {
+      "id": "fail-04",
+      "category": "failure",
+      "routing_ok": true,
+      "answer_ok": true,
+      "approvals_ok": true,
+      "passed": true,
+      "agents": [
+        "analytics"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "tool_calls": 1,
+      "tool_errors": 1,
+      "latency_ms": 3.3,
+      "tokens": 0,
+      "answer": "revenue_by_region failed: Q4 2026 has not happened yet (the warehouse holds Jan 2025 to Sep 2026)."
+    },
+    {
+      "id": "fail-05",
+      "category": "failure",
+      "routing_ok": true,
+      "answer_ok": true,
+      "approvals_ok": true,
+      "passed": true,
+      "agents": [
+        "erp"
+      ],
+      "missing": [],
+      "forbidden": [],
+      "tool_calls": 1,
+      "tool_errors": 0,
+      "latency_ms": 6.5,
+      "tokens": 0,
+      "answer": "Invoice INV-5003 for Alpenmetall AG: amount EUR 8,214.43, paid EUR 8,214.43, open EUR 0.00, due 2026-10-21, status paid."
+    }
+  ]
+}
